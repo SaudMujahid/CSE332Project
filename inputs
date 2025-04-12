@@ -1,1 +1,1 @@
-add r2 r3 r5
+sw r0 r2 0

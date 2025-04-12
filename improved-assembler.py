@@ -134,6 +134,8 @@ writef.write("v2.0 raw\n")
 
 for i in readf:
     splitted = i.split()
+    if not splitted:
+        continue  # skip empty or whitespace-only lines
     
     if(splitted[0] == "add"):
         conv_inst = checkInstruction(splitted[0])
